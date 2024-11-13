@@ -11,11 +11,14 @@
     --dark-color: #111:
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
+html, body {
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 16px;
     line-height: 1.5;
     background: #E6EDf5; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -62,6 +65,9 @@ img {
 
 .navbar .main-menu ul {
     display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
     }
 
 .navbar ul li a {
@@ -123,6 +129,35 @@ img {
     width: 100vw;
     margin-top: 0px;
     position: relative;
+}
+
+/*cover*/
+.cover-section {
+    margin-top: 0px;
+    padding-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #323436;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.container-cover {
+    display: flex;
+    align-items: flex-start;
+    margin: 0 auto;
+    background-color: #323436;
+    padding-top: 0px;
+}
+
+.left, .right {
+    margin: 10px;
+}
+
+.left img, .right img {
+    max-width: 100%;
+    height: auto;
 }
 
 /*index-speakers*/
@@ -204,7 +239,7 @@ img {
 }
 
 .overlay-text a {
-    color: #006eff;
+    color: #006AC2;
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.2;
@@ -216,7 +251,7 @@ img {
 
 .speaker-name {
     text-decoration: none;
-    color: #006eff;
+    color: #006AC2;
     font-weight: bold;
     margin-top: 10px;
     font-size: 1.5rem;
@@ -274,7 +309,7 @@ img {
     outline: none;
     text-decoration: underline;
     text-underline-offset: 5px;
-    color: #006eff;
+    color: #006AC2;
 }
 
 .abstract {
@@ -382,7 +417,7 @@ img {
     cursor: pointer;
     text-decoration: underline;
     text-underline-offset: 5px;
-    color: #006eff;
+    color: #006AC2;
     line-height: 1.6;
     font-weight: 400;
     text-align: right;
