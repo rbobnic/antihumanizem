@@ -121,18 +121,6 @@ img {
 
 /*cover*/
 .cover-section {
-    background-image: url('images/naslovnica.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 110vh;
-    width: 100vw;
-    margin-top: 0px;
-    position: relative;
-}
-
-/*cover*/
-.cover-section {
     margin-top: 0px;
     padding-top: 0px;
     display: flex;
