@@ -150,7 +150,7 @@ img {
 
 /*index-speakers*/
 .index-speakers-section {
-    background-image: #E6EDf5;
+    background: #E6EDf5;
     position: relative;
 }
 
@@ -184,11 +184,9 @@ img {
     gap: 20px;
     padding: 30px 20px 30px;
     margin: 30px auto 150px;
-    background: linear-gradient(145deg, rgba(255, 255, 255, 0.3), rgba(27, 173, 194, 0.2), rgba(0, 0, 0, 0.1)),
-                linear-gradient(45deg, rgba(27, 173, 194, 0.2), rgba(255, 255, 255, 0.3));
+    background: #323436;
     background-blend-mode: overlay;
     padding: 10px;
-    color: #333;
 }
 
 .grid-speaker {
@@ -239,10 +237,10 @@ img {
 
 .speaker-name {
     text-decoration: none;
-    color: #006AC2;
+    color: #E6EDf5;
     font-weight: bold;
     margin-top: 10px;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     text-align: center;
     display: block;
 }
