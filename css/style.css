@@ -425,90 +425,214 @@ img {
     color: black;
 }
 
-
-/* Mobile-specific styles */
+/* mobile */
 @media (max-width: 768px) {
-    body {
+    html, body {
         font-size: 14px;
+        padding: 0;
+        margin: 0;
     }
 
-    .container-navbar {
-        padding: 0 10px;
+    .navbar .container-navbar {
         flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
     }
 
     .navbar .main-menu ul {
         flex-direction: column;
-        align-items: center;
+        width: 100%;
     }
 
     .navbar ul li a {
-        font-size: 14px;
         padding: 8px 10px;
-    }
-
-    .logo {
-        padding-left: 0;
-        margin-bottom: 10px;
+        text-align: left;
+        font-size: 14px;
     }
 
     .cover-section {
-        height: 60vh;
+        flex-direction: column;
+        padding: 20px 10px;
     }
 
-    .index-container-speakers, .index-container-keynotes, .container-footer, .contacts {
-        max-width: 100%;
-        padding: 0 10px;
+    .container-cover {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .left, .right {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .index-speakers-section {
+        padding: 20px 10px;
+        margin: 0;
+    }
+
+    .index-container-speakers, .index-container-keynotes {
+        max-width: 90%;
+        margin: 0 auto;
         text-align: center;
     }
 
     .grid-keynotes {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-columns: 1fr;
         padding: 10px;
-        gap: 15px;
+        gap: 10px;
+        margin: 20px auto;
     }
 
     .grid-speaker {
-        padding-bottom: 10px;
+        margin-bottom: 20px;
     }
 
-    .speaker-image-wrapper {
-        height: 180px;
-    }
-
-    .speaker-name {
-        font-size: 1rem;
+    .overlay-text a {
+        font-size: 1.2rem;
     }
 
     .footer {
+        padding: 10px;
+    }
+
+    .container-footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 20px 0;
     }
 
-    .contacts h2, .text-mail {
-        font-size: 1rem;
+    .contacts {
         text-align: center;
+        padding: 10px 0;
     }
 
     .text-xl {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .text-l {
         font-size: 1.2rem;
     }
 
-    .text-normal {
+    .text-normal, .text-mail, .link {
         font-size: 1rem;
     }
 
-    .text-sm {
-        font-size: 0.85rem;
+    .about-section {
+        padding: 20px 10px;
     }
 
-    .container-slo {
-        font-size: 14px;
+    .container-about {
+        max-width: 90%;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+     .programme-section-section {
+        padding: 20px 10px;
+    }
+
+    .container-programme {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .container-programme-day {
+        text-align: left;
+        padding: 10px 0;
+    }
+
+    .collapsible {
+        font-size: 1rem;
+        cursor: pointer;
+        text-decoration: underline;
+        color: #006AC2;
+        display: block;
+        padding: 5px 0;
+    }
+
+    .abstract {
+        padding: 10px 0;
+    }
+
+    .keynotes-section {
+        padding: 20px 10px;
+    }
+
+    .container-keynotes {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .keynotes-speakers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .keynotes-speakers img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        margin: 15px 0;
+    }
+
+    .container-keynotes .text-l, .text-xl {
+        font-size: 1.4rem;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .venues-section {
+        padding: 20px 10px;
+    }
+
+    .container-venues {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+
+    .container-venues iframe {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    .container-venues div {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .abstract {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .container-info {
+        padding: 10px;
+    }
+
+    .container-info-location {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto 20px;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+        max-width: 350px;
+    }
+
+    .container-info-location div {
+        max-width: 90%;
+        text-align: center;
+        padding: 10px 0;
     }
 }
