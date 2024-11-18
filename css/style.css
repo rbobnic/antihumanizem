@@ -108,6 +108,68 @@ img {
     transform: scaleX(0.95);
 }
 
+/*navbar mobile*/
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 65px;
+    right: 5px;
+    background: linear-gradient(135deg, rgba(220, 220, 220, 1), rgba(182, 206, 232, 1));
+    box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.6), inset 0 -3px 6px rgba(50, 50, 50, 0.2);
+    padding: 10px;
+    z-index: 999;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-menu ul li {
+    margin-bottom: 10px;
+}
+
+.mobile-menu ul li a {
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+}
+
+.mobile-menu ul li:last-child {
+    margin-bottom: 0;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 20px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 3px;
+    transition: transform 0.1s ease, opacity 0.1s ease;
+}
+
+.hamburger.active div:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger.active div:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active div:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
 /*slo*/
 .container-slo {
     padding: 10px 20px;
@@ -247,7 +309,7 @@ img {
 /*footer*/
 .footer {
     padding: 15px;
-    margin: 0 0 0;
+    margin: auto 0;
     background: linear-gradient(135deg, rgba(182, 206, 232, 0.8), rgba(220, 220, 220, 0.8));
     box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.6), inset 0 -3px 6px rgba(50, 50, 50, 0.2);
 }
@@ -260,10 +322,28 @@ img {
     margin: 0 auto 0px;
 }
 
+.container-footer .text-l {
+    margin: 0px; 
+    text-align: right; 
+    color: #333;    
+}
+
 .contacts {
     max-width: 1100px;
     padding: 15px 0 15px;
     text-align: right;
+}
+
+.container-footer-mobile {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container-footer-contacts {
+    text-align: right;
+    margin: 0px;
+    padding: 0px;
 }
 
 /*about*/
@@ -332,6 +412,14 @@ img {
     justify-content: space-between;
 }
 
+.container-venues-location {
+    max-width: 400px;
+}
+
+.container-venues-location .abstract{
+    max-width: 400px;
+}
+
 /*credits*/
 .container-credits {
     max-width: 1100px;
@@ -344,6 +432,28 @@ img {
     max-width: 1100px;
     margin: 100px auto 100px;
     padding: 100 15px 15px;
+}
+
+.container-info-location {
+    max-width: 1100px;
+    margin: 200px auto 100px;
+    padding: 100 15px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-info .container-venues-location .text-xl {
+    color:black; 
+    padding-bottom: 20px;
+}
+
+.container-info .container-venues-location .text-normal, .link {
+    text-align: right;
+}
+
+.container-info .container-venues-location .link {
+    text-align: right;
 }
 
 .container-info-location {
@@ -425,7 +535,7 @@ img {
     color: black;
 }
 
-/* mobile */
+/*mobile*/
 @media (max-width: 768px) {
     html, body {
         font-size: 14px;
@@ -433,21 +543,52 @@ img {
         margin: 0;
     }
 
-    .navbar .container-navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
+    .container-navbar {
+        height: 30px;
     }
 
-    .navbar .main-menu ul {
-        flex-direction: column;
-        width: 100%;
+    .main-menu {
+        display: none;
     }
 
-    .navbar ul li a {
-        padding: 8px 10px;
-        text-align: left;
-        font-size: 14px;
+    .language-mobile {
+        display: inline;
+        padding-left: 0px;
+    }
+
+    .logo {
+        display: none;
+        padding-left: 10px;
+    }
+
+    .home {
+        display: inline;
+        padding-left: 5px;
+    }
+
+    .home img {
+        width: 30%;
+        height: 30%;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .mobile-menu.active {
+        display: flex;
+    }
+
+    .container-footer {
+        display: none;
+    }
+
+    .container-footer-mobile {
+        display: flex;
+    }
+
+    .container-footer-mobile .text-l {
+        text-align: center;
     }
 
     .cover-section {
@@ -459,7 +600,6 @@ img {
         flex-direction: column;
         align-items: center;
         padding: 0;
-        background-color: #323436;
     }
 
     .left, .right {
@@ -470,6 +610,7 @@ img {
     .index-speakers-section {
         padding: 20px 10px;
         margin: 0;
+        background-color: #E6EDf5;
     }
 
     .index-container-speakers, .index-container-keynotes {
@@ -478,12 +619,19 @@ img {
         text-align: center;
     }
 
+    .index-container-speakers .text-xl {
+        text-align: right;
+    }
+
+    .index-container-keynotes .text-xl {
+        text-align: right;
+    }
+
     .grid-keynotes {
         grid-template-columns: 1fr;
         padding: 10px;
         gap: 10px;
         margin: 20px auto;
-        background-color: #323436;
     }
 
     .grid-speaker {
@@ -492,21 +640,6 @@ img {
 
     .overlay-text a {
         font-size: 1.2rem;
-    }
-
-    .footer {
-        padding: 10px;
-    }
-
-    .container-footer {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .contacts {
-        text-align: center;
-        padding: 10px 0;
     }
 
     .text-xl {
@@ -584,8 +717,22 @@ img {
 
     .container-keynotes .text-l, .text-xl {
         font-size: 1.4rem;
-        text-align: center;
+        text-align: left;
         margin: 10px 0;
+    }
+
+    .credits-section {
+        padding: 20px 10px;
+    }
+
+    .container-credits {
+        max-width: 90%;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .container-credits h1 {
+        padding-bottom: 10px;
     }
 
     .venues-section {
@@ -594,20 +741,22 @@ img {
 
     .container-venues {
         flex-direction: column;
-        align-items: center;
         margin-bottom: 30px;
     }
-
 
     .container-venues iframe {
         width: 100%;
         max-width: 350px;
         height: auto;
+        align-items: center;
     }
 
-    .container-venues div {
-        max-width: 90%;
-        text-align: center;
+    .container-venues-location {
+        max-width: 100%;
+    }
+
+    .container-venues .text-xl, .text-normal {
+        text-align: left;
     }
 
     .abstract {
@@ -624,6 +773,14 @@ img {
         flex-direction: column;
         align-items: center;
         margin: 0 auto 20px;
+    }
+
+    .container-info .container-venues-location .text-xl {
+        text-align: left;
+    }
+
+    .container-info .container-venues-location .text-normal {
+        text-align: left;
     }
 
     iframe {
