@@ -63,6 +63,14 @@ img {
     padding-left: 150px;
 }
 
+.home {
+    padding-left: 150px;
+}
+
+.language-mobile {
+    display: none;
+}
+
 .navbar .main-menu ul {
     display: flex;
     padding: 0;
