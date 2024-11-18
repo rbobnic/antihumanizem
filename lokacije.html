@@ -14,28 +14,31 @@
 <body>
     
     <nav class="navbar">
-        <div class="container-navbar">
-            <div class="logo">
-                <a href="index.html"><img src="images/Naslov SLO.webp" alt="land-home" width="160" height="47"></a>
-            </div>
+        <div class="home">
+            <a href="index.html"><img src="images/Naslov SLO.webp"></a>
+        </div>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
             <div class="main-menu">
                 <ul>
-                    <li>
-                        <a href="opis.html">O P I S</a>
-                    </li>
-                    <li>
-                        <a href="program.html">P R O G R A M</a>
-                    </li>
-                    <li>
-                        <a href="keynotes-si.html">K E Y N O T E S</a>
-                    </li>
-                    <li>
-                        <a href="lokacije.html">L O K A C I J E</a>
-                    </li>
-                    <li>
-                        <a href="kolofon.html">K O L O F O N</a>
-                    </li>
+                    <li><a href="opis.html">O P I S</a></li>
+                    <li><a href="program.html">P R O G R A M</a></li>
+                    <li><a href="keynotes-si.html">K E Y N O T E S</a></li>
+                    <li><a href="lokacije.html">L O K A C I J E</a></li>
+                    <li><a href="kolofon.html">K O L O F O N</a></li>
                 </ul>    
+            </div>
+            <div class="mobile-menu">
+                <ul>
+                    <li><a href="about.html">OPIS</a></li>
+                    <li><a href="programme.html">PROGRAME</a></li>
+                    <li><a href="keynotes-en.html">KEYNOTES</a></li>
+                    <li><a href="venues.html">LOKACIJE</a></li>
+                    <li><a href="credits.html">KOLOFON</a></li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -45,8 +48,8 @@
             <div>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2767.845097030429!2d14.511650676754813!3d46.074129792536326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476532eb10b8c2ff%3A0x2aac9f17a7d42ca2!2sFaculty%20of%20Social%20Sciences%20-%20University%20of%20Ljubljana!5e0!3m2!1sen!2ssi!4v1726155424856!5m2!1sen!2ssi" width="500" height="375" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div> 
-            <div style="max-width: 400px;">
-                <div><p class="text-xl" style="padding-bottom: 20px">četrtek, 5. 12.<br>petek, 6. 12.</p></div>
+            <div class="container-venues-location">
+                <h1 class="text-xl" style="padding-bottom: 20px">četrtek, 5. 12.<br>petek, 6. 12.</h1>
                 <p class="text-normal" style="text-align: right;">Univerza v Ljubljani<br>Fakulteta za družbene vede<br>Kardeljeva ploščad 5<br>Ljubljana<br>predavalnica FDV23</p>
             </div>   
         </div>
@@ -54,26 +57,38 @@
             <div>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2769.587955320128!2d14.497689776753727!3d46.0466179943917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47652d6666114239%3A0xaee558fc1153eca1!2sFaculty%20of%20Arts%2C%20University%20of%20Ljubljana!5e0!3m2!1sen!2ssi!4v1726155205620!5m2!1sen!2ssi" width="500" height="375" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div style="max-width: 400px;">
-                <div><p class="text-xl" style="padding-bottom: 20px">sobota, 7. 12.</p></div>
+            <div class="container-venues-location">
+                <h1 class="text-xl" style="padding-bottom: 20px">sobota, 7. 12.</h1>
                 <p class="text-normal" style="text-align: right;">Univerza v Ljubljani<br>Filozofska fakulteta<br>Aškerčeva 2<br>Ljubljana<br>predavalnici 4 & 15</p>
             </div>    
         </div>
     </section>
 
     <footer class="footer">
-        <div class="container-footer">
-            <div>
-                <a href="https://www.ff.uni-lj.si/"><img src="images/ul_ff-logohor-rgb_barv.png" alt="logo-ff" width="280" height="63" style="padding-right: 15px"></a>
+            <div class="container-footer">
+                <div>
+                    <a href="https://www.ff.uni-lj.si/"><img src="images/ul_ff-logoeng-hor-cmyk_color.png" alt="logo-ff" width="280" height="63" style="padding-right: 15px"></a>
+                    <a href="https://www.fdv.uni-lj.si/"><img src="images/UL_FDV-ENG-logo-HOR-CMYK_barvni.png" alt="logo-fdv" width="280" height="63"></a>
+                </div>
+                <div class="contacts">
+                    <h2 class="text-l">Kontakt</h2>
+                    <a class="text-mail" href="mailto: primoz.krasovec@ff.uni-lj.si">primoz.krasovec@ff.uni-lj.si</a>
+                    <br><a href="#"><img src="images/4745722_media_social_facebook_network_icon.png" alt="logo" width="32" height="32"></a>
+                </div>
+            </div>
+            <div class="container-footer-mobile">
+                <div>
+                    <a href="https://www.ff.uni-lj.si/"><img src="images/ul_ff-logohor-rgb_barv.png" alt="logo-ff" width="280" height="63" style="padding-right: 15px"></a>
                 <a href="https://www.fdv.uni-lj.si/"><img src="images/UL_FDV-SLO-logoHOR-CMYK_barv.png" alt="logo-fdv" width="280" height="63"></a>
+                </div>
+                <div class="contacts-mobile">
+                    <h2 class="text-l">Kontakt: <a class="text-mail" href="mailto: primoz.krasovec@ff.uni-lj.si">primoz.krasovec@ff.uni-lj.si</a></h2>
+                    <a href="#"><img src="images/4745722_media_social_facebook_network_icon.png" alt="logo" width="32" height="32"></a>
+                </div>
             </div>
-            <div class="contacts">
-                <h2 class="text-l" style="margin: 0px; text-align: right; color: #333;">Kontakt</h2>
-                <a class="text-mail" href="mailto: primoz.krasovec@ff.uni-lj.si">primoz.krasovec@ff.uni-lj.si</a>
-                <br><a href="#"><img src="images/4745722_media_social_facebook_network_icon.png" alt="logo" width="32" height="32"></a>
-            </div>
-        </div>
-    </footer>
+        </footer>
+
+    <script src="js/main.js"></script>
 
 </body>
 
