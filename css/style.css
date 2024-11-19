@@ -261,11 +261,10 @@ img {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10px, 1fr)); /*responsive grid*/
     gap: 20px;
-    padding: 30px 20px 30px;
+    padding: 20px 20px;
     margin: 30px auto 150px;
     background: #323436;
     background-blend-mode: overlay;
-    padding: 10px;
 }
 
 .grid-speaker {
