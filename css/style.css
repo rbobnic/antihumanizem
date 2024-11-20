@@ -767,13 +767,14 @@ img {
 
     .credits-section {
         padding: 20px 10px;
+        margin: 0px;
     }
 
     .container-credits {
         max-width: 90%;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin: 0 auto;
         text-align: left;
+        padding: 0px;
     }
 
     .container-credits .text-xl {
