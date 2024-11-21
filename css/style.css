@@ -418,18 +418,31 @@ img {
 /*keynotes*/
 .container-keynotes {
     max-width: 1100px;
-    margin: 100px auto 100px;
-    padding: 0 15px 15px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100 15px 15px;
 }
 
 .keynotes-speakers {
     max-width: 1100px;
     margin: 0px auto 50px;
-    padding: 100px 0px 15px;
+    padding: 0px 0px 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+.container-keynotes .text-normal {
+    text-align: left;
+    margin-bottom: 100px;
+}
+
+.keynotes-section-mobile {
+    display: none;
+}
+
 
 /*venues*/
 .container-venues {
@@ -480,33 +493,42 @@ img {
 
 .container-info-location {
     max-width: 1100px;
-    margin: 200px auto 100px;
-    padding: 100 15px 15px;
+    margin: 0px auto 100px;
+    padding: 0px 15px 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.container-info .container-venues-location .text-xl {
+.container-info-location :last-child {
+    padding-top: 0px;
+}
+
+.container-info-location-text {
+    max-width: 400px;
+}
+
+.container-info .container-info-location-text .text-xl {
     color:black; 
     padding-bottom: 20px;
 }
 
-.container-info .container-venues-location .text-normal, .link {
+.container-info .container-info-location-text .text-normal {
     text-align: right;
 }
 
-.container-info .container-venues-location .link {
+.container-info-location-text .text-normal .link {
     text-align: right;
 }
 
-.container-info-location {
-    max-width: 1100px;
-    margin: 200px auto 100px;
-    padding: 100 15px 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.container-info .container-info-residum .text-xl {
+    color:black; 
+    text-align: left; 
+    padding-bottom: 20px;
+}
+
+.container-info .container-info-residum .text-normal {
+    margin-bottom: 50px;
 }
 
 /*text*/
@@ -736,33 +758,50 @@ img {
     }
 
     .keynotes-section {
-        padding: 20px 10px;
+        display: none;
     }
 
-    .container-keynotes {
+    .keynotes-section-mobile {
+        padding: 20px 10px;
+        display: block;
+    }
+
+    .container-keynotes-mobile{
         max-width: 90%;
         margin: 0 auto;
     }
-
-    .keynotes-speakers {
+    
+    .keynotes-speakers-mobile {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         margin-bottom: 30px;
     }
-
-    .keynotes-speakers img {
+    
+    .keynotes-speakers-mobile img {
         width: 100%;
         max-width: 250px;
         height: auto;
         margin: 15px 0;
     }
-
-    .container-keynotes .text-l, .text-xl {
+    
+    .keynotes-section-mobile .keynotes-speakers-mobile .text-l {
         font-size: 1.4rem;
         text-align: left;
         margin: 10px 0;
+        padding-left: 0px;
+    }
+
+    .keynotes-section-mobile .keynotes-speakers-mobile .text-xl {
+        font-size: 1.4rem;
+        text-align: left;
+        margin: 10px 0;
+        padding-left: 0px;
+    }
+
+    .keynotes-section-mobile .container-keynotes-mobile .text-normal {
+        margin-bottom: 50px;
     }
 
     .credits-section {
