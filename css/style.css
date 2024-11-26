@@ -724,7 +724,8 @@ img {
     }
 
     .about-section {
-        padding: 20px 10px;
+        padding: 30px 10px;
+        margin: 0px;
     }
 
     .container-about {
@@ -732,6 +733,7 @@ img {
         margin: 0 auto;
         text-align: left;
         padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     .container-about .text-xl {
@@ -740,6 +742,11 @@ img {
         margin: 0px auto;
     }
 
+    .programme-section-section {
+        padding: 30px 10px;
+        margin: 0px;
+    }
+    
     .container-programme {
         max-width: 90%;
         margin: 0 auto;
@@ -748,6 +755,7 @@ img {
     .container-programme-day {
         text-align: left;
         padding: 10px 0;
+        padding-bottom: 10px;
     }
 
     .collapsible {
@@ -768,7 +776,7 @@ img {
     }
 
     .keynotes-section-mobile {
-        padding: 20px 10px;
+        padding: 30px 10px;
         display: block;
     }
 
@@ -811,7 +819,7 @@ img {
     }
 
      .credits-section {
-        padding: 20px 10px;
+        padding: 30px 10px;
         margin: 0px;
     }
 
@@ -820,6 +828,7 @@ img {
         margin: 0 auto;
         text-align: left;
         padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     .container-credits .text-xl {
@@ -829,7 +838,7 @@ img {
     }
 
     .venues-section {
-        padding: 20px 10px;
+        padding: 30px 10px;
         margin: 0px;
     }
 
@@ -862,12 +871,16 @@ img {
     }
 
     .info-section {
-        padding: 20px 10px;
+        padding: 30px 10px;
         margin: 0px;
     }
 
     .container-info {
-        padding: 10px;
+        padding-top: 0px;
+        max-width: 90%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        margin-top: 20px;
     }
 
     .container-info-location {
@@ -878,18 +891,9 @@ img {
         padding-top: 0;
     }
 
-    .container-info .container-venues-location .text-xl {
-        text-align: left;
-    }
-
-    .container-info .container-venues-location .text-normal {
-        text-align: left;
-    }
-
-    .container-info-location iframe {
-        max-width: 90%;
+   .container-info-location-text {
         text-align: center;
-        padding: 10px 0;
+        padding-bottom: 10px;
     }
 
     .container-info iframe {
@@ -904,5 +908,13 @@ img {
 
     .container-info-residum .text-xl {
         padding-bottom: 0px;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+
+    .container-info-residum .text-normal {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
     }
 }
