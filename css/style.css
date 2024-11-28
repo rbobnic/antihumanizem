@@ -253,6 +253,11 @@ img {
     position: relative;
 }
 
+.index-container-keynotes .text-xl {
+    text-align: right;
+    color: #006AC2;
+}
+
 .keynotes-title {
     position: absolute;
     top: 50%;
@@ -316,7 +321,7 @@ img {
 }
 
 .grid-speaker:hover .overlay-text {
-    opacity: 1; /*show lecture title*/
+    opacity: 1;
 }
 
 .speaker-name {
@@ -327,6 +332,7 @@ img {
     font-size: 1.6rem;
     text-align: center;
     display: block;
+    color: #5ABACC;
 }
 
 /*footer*/
@@ -551,7 +557,7 @@ img {
 }
 
 .container-info-residum .text-xl {
-    color:black; 
+    color: #006AC2; 
     text-align: left; 
     padding-bottom: 20px;
 }
@@ -620,6 +626,7 @@ img {
     font-weight: 600;
     margin: 15px;
     text-align: left;
+    color: #5ABACC;
 }
 
 .text-xl {
@@ -697,7 +704,13 @@ img {
         padding: 0px;
     }
 
-    .left, .right-mobile {
+    .left {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .right-mobile {
+        display: block;
         width: 100%;
         margin: 0px;
     }
@@ -718,7 +731,7 @@ img {
         text-align: center;
     }
 
-    .index-container-speakers .text-xl {
+    .index-container-speakers .goal .text-xl {
         text-align: right;
         color: #006AC2;
     }
@@ -750,6 +763,7 @@ img {
 
     .text-l {
         font-size: 1.2rem;
+        color: #5ABACC;
     }
 
     .text-normal, .text-mail, .link {
@@ -839,6 +853,7 @@ img {
         text-align: left;
         margin: 10px 0;
         padding-left: 0px;
+        color: #5ABACC;
     }
 
     .keynotes-section-mobile .keynotes-speakers-mobile .text-xl {
