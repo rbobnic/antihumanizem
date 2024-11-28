@@ -253,7 +253,7 @@ img {
     position: relative;
 }
 
-.index-container-keynotes .text-xl a {
+.index-container-keynotes .text-xl {
     text-align: right;
     color: #006AC2;
 }
