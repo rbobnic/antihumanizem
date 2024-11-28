@@ -15,7 +15,7 @@ html, body {
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    background: #E6EDf5; 
+    background: white; 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -219,13 +219,8 @@ img {
 
 /*index-speakers*/
 .index-speakers-section {
-    background-image: white;
+    background: white;
     position: relative;
-}
-
-.index-container-speakers .goal .text-xl {
-    text-align: right;
-    color: #006AC2;
 }
 
 .index-container-speakers {
@@ -236,9 +231,19 @@ img {
     position: relative;
 }
 
+.index-container-speakers .text-xl {
+    color: #006AC2;
+    text-align: right;
+    padding-bottom: 20px;
+}
+
+.index-container-speakers .text-normal {
+    text-align: right;
+}
+
 /*index-keynotes*/
-.index-container-section {
-    background-image: white;
+.index-keynotes-section {
+    background: white;
     position: relative;
 }
 
@@ -263,13 +268,13 @@ img {
 
 /*index-keynotes-grid*/
 .grid-keynotes {
-    max-width: 1300px;
+    max-width: 1100px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
     gap: 20px;
-    padding: 20px 20px;
-    margin: 30px auto 150px;
-    background: #E6EDf5;
+    padding: 10px 0px;
+    margin: 10px auto 150px;
+    background: white;
     background-blend-mode: overlay;
 }
 
@@ -422,14 +427,16 @@ img {
     text-align: justify;
 }
 
-.container-programme .text-xl {
+.container-programme-day .text-xl {
     text-align: left;
     color: #006AC2;
 }
 
-.container-programme-day .text-normal {
+.container-programme-day .text-l {
     text-align: left;
     color:  #5ABACC;
+    padding: 0px;
+    margin: 0px
 }
 
 /*keynotes*/
@@ -464,7 +471,6 @@ img {
 .keynotes-section-mobile {
     display: none;
 }
-
 
 /*venues*/
 .container-venues {
@@ -728,7 +734,6 @@ img {
     .index-speakers-section {
         padding: 20px 10px;
         margin: 0;
-        background-color: #E6EDf5;
     }
 
     .index-container-speakers, .index-container-keynotes {
