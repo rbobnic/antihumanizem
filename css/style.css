@@ -196,17 +196,6 @@ img {
 }
 
 /*cover*/
-/*
-.cover-section {
-    margin-top: 0px;
-    padding-top: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:  white;
-    box-sizing: border-box;
-}*/
-
 .container-cover {
     display: flex;
     align-items: flex-start;
@@ -230,11 +219,11 @@ img {
 
 /*index-speakers*/
 .index-speakers-section {
-    background-image: #E6EDf5;
+    background-image: white;
     position: relative;
 }
 
-.index-speakers-section .goal .text-xl {
+.index-container-speakers .goal .text-xl {
     text-align: right;
     color: #006AC2;
 }
@@ -247,13 +236,19 @@ img {
     position: relative;
 }
 
+/*index-keynotes*/
+.index-container-section {
+    background-image: white;
+    position: relative;
+}
+
 .index-container-keynotes {
     max-width: 1100px;
     margin: 0 auto 0px;
     position: relative;
 }
 
-.index-container-keynotes .text-xl {
+.index-container-keynotes .text-xl a {
     text-align: right;
     color: #006AC2;
 }
@@ -270,7 +265,7 @@ img {
 .grid-keynotes {
     max-width: 1300px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr)); /*responsive grid*/
+    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
     gap: 20px;
     padding: 20px 20px;
     margin: 30px auto 150px;
@@ -432,6 +427,11 @@ img {
     color: #006AC2;
 }
 
+.container-programme-day .text-normal {
+    text-align: left;
+    color:  #5ABACC;
+}
+
 /*keynotes*/
 .container-keynotes {
     max-width: 1100px;
@@ -449,6 +449,11 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.container-keynotes .text-l {
+    text-align: left;
+    color: #5ABACC;
 }
 
 .container-keynotes .text-normal {
@@ -691,6 +696,7 @@ img {
 
     .container-footer-mobile .text-l {
         text-align: center;
+        color: #333;
     }
 
     .cover-section {
@@ -804,6 +810,10 @@ img {
         text-align: left;
         padding: 10px 0;
         padding-bottom: 10px;
+    }
+
+    .container-programme-day .text-normal {
+        color: #5ABACC;
     }
 
     .collapsible {
