@@ -231,7 +231,7 @@ img {
     position: relative;
 }
 
-.index-container-speakers .text-xl {
+.index-container-speakers .text-xl a {
     color: #006AC2;
     text-align: right;
     padding-bottom: 20px;
