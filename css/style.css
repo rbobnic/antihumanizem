@@ -732,8 +732,9 @@ img {
     }
 
     .index-speakers-section {
-        padding: 20px 10px;
-        margin: 0;
+        padding-bottom: 0px 10px 20px;
+        margin: 0px;
+
     }
 
     .index-container-speakers, .index-container-keynotes {
@@ -742,13 +743,17 @@ img {
         text-align: center;
     }
 
-    .index-container-speakers .goal .text-xl {
-        text-align: right;
+    .index-container-speakers .text-xl {
+        text-align: left;
         color: #006AC2;
     }
 
+    .index-container-speakers .text-normal {
+        text-align: left;
+    }
+
     .index-container-keynotes .text-xl {
-        text-align: right;
+        text-align: left;
         color: #006AC2;
     }
 
